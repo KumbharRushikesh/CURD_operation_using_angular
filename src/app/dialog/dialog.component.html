@@ -1,0 +1,61 @@
+<h1 mat-dialog-title>{{ActionName}}</h1>
+<div mat-dialog-content>
+   <form [formGroup]="UserForm">
+    <mat-form-field appearance="outline">
+        <mat-label>User ID</mat-label>
+        <input matInput formControlName="userID" placeholder="Mention ID here" >
+    </mat-form-field>
+    <table class="example-full-width" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>First name</mat-label>
+                    <input matInput formControlName="FirstName" placeholder="Enter your First name" >
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput formControlName="LastName" placeholder="Enter your last name" >
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+    <!-- <small *ngIf="fname lname ">Your user name is {{fname}} {{lname}}</small> -->
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput formControlName="Email" id="email"  size="50 "required>
+    </mat-form-field>
+    <!-- <small class="text-danger" *ngIf="!email.valid && email.touched"> Please enter Valid Email</small> -->
+    <mat-form-field appearance="outline">
+        <mat-label>Mobile No</mat-label>
+        <input type="tel" matInput formControlName="MobileNo" placeholder="Enter your Mobile number" >
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput formControlName="Password"  minlength="8" placeholder="Enter your password">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Experience</mat-label>
+        <input type="number" matInput formControlName="Experience"  min="0" max="25">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Address</mat-label>
+        <textarea matInput formControlName="Address" placeholder="Enter your Address"></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>CVLineDescription</mat-label>
+        <textarea  matInput formControlName="CVLineDescription" placeholder="Description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Education</mat-label>
+        <input matInput formControlName="Education" placeholder="Enter your Education" >
+    </mat-form-field>  
+   </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="primary" mat-dialog-close>Close</button>
+    <button mat-raised-button color="warn" style="margin-left: 10px;" (click)="CreateUser()" >{{ActionBtn}}</button>
+
+</div>

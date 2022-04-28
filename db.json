@@ -1,0 +1,66 @@
+{
+  "UserList": [
+    {
+      "userID": "01",
+      "FirstName": "rushi",
+      "LastName": "kumbhar ",
+      "Email": "ruzi@gamil.com",
+      "MobileNo": "9011071442",
+      "Password": "rushikubgae",
+      "Experience": 11,
+      "Address": "Bramati",
+      "CVLineDescription": "rk.com",
+      "Education": "BE",
+      "id": 1
+    },
+    {
+      "userID": "02 ",
+      "FirstName": "Suraj ",
+      "LastName": "Zagade ",
+      "Email": "surajzagade234@gmail.com",
+      "MobileNo": "9087676765",
+      "Password": "suraj@123",
+      "Experience": 0,
+      "Address": "katpal ",
+      "CVLineDescription": "sz.com",
+      "Education": "BE",
+      "id": 2
+    },
+    {
+      "userID": "03",
+      "FirstName": "Abhi ",
+      "LastName": "khodave",
+      "Email": "abhikhodave02@gmail.com",
+      "MobileNo": "9087873621",
+      "Password": "abhi@2345",
+      "Experience": 0,
+      "Address": "baramati",
+      "CVLineDescription": "ak.com",
+      "Education": "BE",
+      "id": 3
+    },
+    {
+      "userID": "04",
+      "FirstName": "shubham ",
+      "LastName": "kunjir",
+      "Email": "shubhamgkunjir1242@gmail.com",
+      "MobileNo": "9083281823",
+      "Password": "shubham@243",
+      "Experience": 0,
+      "Address": "pune ",
+      "CVLineDescription": "sk.com",
+      "Education": "BE",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
